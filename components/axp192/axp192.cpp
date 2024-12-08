@@ -31,7 +31,7 @@ void AXP192Component::setup()
             ESP_LOGD(TAG, "First power on, restarting ESP...");
 
             // Reboot the ESP with the axp initialised
-            esphome.restart();
+            esp_restart();
         }
         break;
     }
